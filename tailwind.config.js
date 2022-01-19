@@ -1,14 +1,9 @@
-const plugin = require("tailwindcss/plugin");
+const tailwindcss = require("tailwindcss")
 
 module.exports = {
-  content: [],
+  content: ["/index.html"],
   theme: {
     extend: {},
   },
-  plugins: [
-    function ({ addUtilities, addComponents, e, prefix, config }) {
-      // Add your custom styles here
-    },
-    require("@tailwindcss/forms"),
-  ],
-};
+  plugins: [require("@tailwindcss/forms")],
+}

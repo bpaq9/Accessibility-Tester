@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -20,12 +21,13 @@
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15",
     "pa11y": "^6.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "nodemon": "^2.0.15",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.12"
+    "tailwindcss": "^3.0.13",
+    "vite": "^2.7.10"
   }
 }
