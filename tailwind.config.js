@@ -1,9 +1,9 @@
-const tailwindcss = require("tailwindcss")
+const tailwindcss = require('tailwindcss')
 
 module.exports = {
-  content: ["/index.html"],
+  content: ['/index.html'],
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require('@tailwindcss/forms')],
 }
