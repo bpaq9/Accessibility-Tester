@@ -13,27 +13,34 @@
     <title>Website Accessibility Tester</title>
   </head>
   <body>
-    <main
-      class="h-screen bg-green-50 container mx-auto flex flex-col justify-center items-center"
-    >
-      <div class="mt-20 flex flex-col justify-center items-center">
-        <section class="flex-col rounded-3xl w-96 mx-auto p-5 bg-sky-900/75">
-          <h1 class="mb-6 text-center text-3xl font-bold">
+    <main class="bg-stone-50 h-screen w-full flex flex-col">
+      <div
+        class="mx-0 bg-stone-50 h-max w-full mt-10 flex flex-col justify-center items-center"
+      >
+        <section
+          class="drop-shadow-2xl flex-col rounded-3xl w-96 mx-auto pt-5 bg-teal-900"
+        >
+          <h1 class="px-5 mb-6 text-center text-3xl text-white font-bold">
             Website Accessibility Tester
           </h1>
           <form action="" id="form">
             <div class="flex flex-col">
               <input
                 type="url"
-                class="mb-5"
                 id="url"
                 placeholder="Enter a website..."
+                class="mx-5 mb-5"
               />
-              <button type="submit" class="">Submit</button>
+              <button
+                type="submit"
+                class="text-white hover:text-zinc-50 text-xl py-5 bg-black ext-teal-900 hover:bg-gray-800 rounded-b-3xl"
+              >
+                Submit
+              </button>
             </div>
           </form>
         </section>
-        <div class="mt-3 justify-center flex">
+        <div class="my-3 justify-center flex">
           <svg
             class="loader invisible animate-spin -ml-1 mr-3 h-5 w-5 text-black"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,9 +63,10 @@
             ></path>
           </svg>
         </div>
-      </div>
-      <div class="shadow-xl p-2.5 border-black rounded-2xl border-2">
-        <div id="issues"></div>
+        <div
+          id="issues"
+          class="mx-auto h-max w-full mx-0 bg-stone-50 flex flex-col"
+        ></div>
       </div>
     </main>
     <script src="/js/main.js"></script>

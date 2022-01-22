@@ -32,15 +32,16 @@ const addIssuesToDOM = (issues) => {
   } else {
     issues.forEach((issue) => {
       const output = `
-            <h4>${issue.message}</h4>
-            <p class="my-3 p-3">
-              ${escapeHTML(issue.context)}
-            </p>
-            <p class="p-2">
-              CODE: ${issue.code}
-            </p>
+      <div class="mx-auto mb-5 w-1/2 drop-shadow-2xl border-black border bg-white rounded-4xl">
+        <h4 class="p-5 font-bold">${issue.message}</h4>
+        <p class="p-5 text-ellipsis overflow-hidden">
+          ${escapeHTML(issue.context)}
+        </p>
+        <p class="bg-gray-900 text-white text-ellipsis overflow-hidden rounded-b-3xl p-3">
+        CODE: ${issue.code}
+        </p>
+      </div>
       `
-
       issuesOutput.innerHTML += output
     })
   }
