@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgo="
+    />
+    <link href="./output.css" type="text/css" rel="stylesheet" />
+    <title>Website Accessibility Tester</title>
+  </head>
+  <body>
+    <main class="bg-stone-50 h-screen w-full flex flex-col">
+      <div
+        class="mx-0 bg-stone-50 h-max w-full mt-10 flex flex-col justify-center items-center"
+      >
+        <section
+          class="drop-shadow-2xl flex-col rounded-3xl w-96 mx-auto pt-5 bg-teal-900"
+        >
+          <h1 class="px-5 mb-6 text-center text-3xl text-white font-bold">
+            Website Accessibility Tester
+          </h1>
+          <form action="" id="form">
+            <div class="flex flex-col">
+              <input
+                type="url"
+                id="url"
+                placeholder="Enter a website..."
+                class="mx-5 mb-5"
+              />
+              <button
+                type="submit"
+                class="text-white hover:text-zinc-50 text-xl py-5 bg-black ext-teal-900 hover:bg-gray-800 rounded-b-3xl"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </section>
+        <div class="my-3 justify-center flex">
+          <svg
+            class="loader invisible animate-spin -ml-1 mr-3 h-5 w-5 text-black"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            style="visibility: hidden"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          id="issues"
+          class="mx-auto h-max w-full mx-0 bg-stone-50 flex flex-col"
+        ></div>
+      </div>
+    </main>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
