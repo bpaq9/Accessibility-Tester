@@ -32,7 +32,6 @@ const addIssuesToDOM = (issues) => {
   } else {
     issues.forEach((issue) => {
       const output = `
-        <div class="card">
             <h4>${issue.message}</h4>
             <p class="my-3 p-3">
               ${escapeHTML(issue.context)}
@@ -40,7 +39,6 @@ const addIssuesToDOM = (issues) => {
             <p class="p-2">
               CODE: ${issue.code}
             </p>
-        </div>
       `
 
       issuesOutput.innerHTML += output

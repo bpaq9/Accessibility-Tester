@@ -9,7 +9,7 @@
       type="image/png"
       href="data:image/png;base64,iVBORw0KGgo="
     />
-    <link rel="stylesheet" href="/output.css" />
+    <link href="./output.css" type="text/css" rel="stylesheet" />
     <title>Website Accessibility Tester</title>
   </head>
   <body>
@@ -57,8 +57,10 @@
           </svg>
         </div>
       </div>
-      <div id="issues"></div>
+      <div class="shadow-xl p-2.5 border-black rounded-2xl border-2">
+        <div id="issues"></div>
+      </div>
     </main>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
