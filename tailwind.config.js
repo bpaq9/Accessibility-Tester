@@ -1,7 +1,7 @@
 const tailwindcss = require('tailwindcss')
 
 module.exports = {
-  content: ['./public/index.html', './public/js/main.js'],
+  content: ['./docs/index.html', './docs/js/main.js'],
   theme: {
     extend: {},
   },
