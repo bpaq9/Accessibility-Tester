@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 5500
 
 const app = express()
 
-app.use(express.static('docs'))
+app.use(express.static('public'))
 
 app.get('/api/test', async (req, res) => {
   if (!req.query.url) {

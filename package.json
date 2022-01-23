@@ -2,7 +2,7 @@
   "name": "accessibility-tester",
   "version": "1.0.0",
   "description": "",
-  "main": "/docs/index.js",
+  "main": "/index.js",
   "scripts": {
     "start": "node index",
     "dev": "vite"
