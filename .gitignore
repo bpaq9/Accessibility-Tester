@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -40,7 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+*.DS_Store
 # TypeScript v1 declaration files
 typings/
 
